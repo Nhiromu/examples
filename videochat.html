@@ -12,7 +12,7 @@
  
     var video = document.getElementById('myVideo');
     var localStream = null;
-    navigator.getUserMedia({video: true, audio: false}, 
+    navigator.getUserMedia({video: true, audio: true}, 
      function(stream) { // for success case
       console.log(stream);
       video.src = window.URL.createObjectURL(stream);
