@@ -148,6 +148,7 @@ $(function() {
         } else {
           dataBlob = data;
         }
+        console.log(dataBlob.name);
         const filename = dataBlob.name || 'file';
         const url = URL.createObjectURL(dataBlob);
         $('#' + c.remoteId).find('.messages').append('<div><span class="file">' +
